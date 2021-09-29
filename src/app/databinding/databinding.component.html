@@ -1,0 +1,6 @@
+<p>{{pageName}} </p>  <!--interpolation-->
+<div><input type="button" (click)="evnetFunction()" value="{{eventBinding}}"></div><!--Event Binding -->
+<div><input type="text" [value]="userName"></div> {{userName}}<!--property Binding -->
+<div><input type="text" name="emailId" [(ngModel)]="emailId" />
+<p>Two way binding! Hello {{ emailId }}!</p></div>
+
