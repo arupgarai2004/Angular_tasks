@@ -1,0 +1,12 @@
+<p>my-first-component works!</p>
+<div>
+<div [ngStyle]="{'background-color':'green'}">Green color style</div>
+<div [ngStyle]="{'background-color':country === 'UK' ? 'green' : 'red' }"> COuntry style</div>
+<button [ngClass]="['btn', 'btn-primary']">Button</button> <!--button class="btn btn-primary">Button</button-->
+
+<button (click)="deleteHero()">Delete hero</button>
+
+<div>The chained hero's birthday is {{ birthday | date:'fullDate'  | lowercase}}</div>
+</div>
+
+
